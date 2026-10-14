@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <style>
+      ::selection{
+        color:red;
+        background-color: yellowgreen;
+      }
+      #button-1::first-letter{
+        color:red;
+        font-size:xx-large;
+      }
+      #button-2::first-line{
+        color:yellow;
+        font-variant: small-caps;
+      }
+      #buttons{
+        font-size: medium;
+        text-align: center;
+        padding:10px;
+      }
+      .primary{
+        height:40px;
+        width:120px;
+        background-color: green;
+        border-radius:15px;
+      }
+      .primary:hover{
+        background-color:rgb(140, 238, 140);
+      }
+      
+      .secondary{
+        height:40px;
+        width:150px;
+        background-color: rgb(230, 255, 8);
+        border-radius:15px;
+      }
+      .secondary:hover{
+        background-color:rgb(212, 223, 118);
+      }
+      .danger{
+        height:40px;
+        width:120px;
+        background-color: rgb(255, 58, 58);
+        border-radius:15px;
+      }
+      .danger:hover{
+        background-color:rgb(216, 141, 141);
+      }
+
+    </style>
+</head>
+<body>
+    <h1>Button Styling</h1>
+    <div class="primary">
+        <p id="buttons">Primary Button</p>
+    </div>
+    <p id="button-1">Primary Button</p>
+    <div class="secondary">
+        <p id="buttons">Secondary Button</p> 
+    </div>
+    <p id="button-2">Secondary Button</p>
+    <div class="danger">
+        <p id="buttons">Danger Button</p>
+    </div>
+    <p id="button-3">Danger Button</p>
+</body>
+</html>

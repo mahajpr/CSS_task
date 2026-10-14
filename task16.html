@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 16</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: rgb(218, 205, 190);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display:flex;
+            flex-direction:column;
+        }
+        .header{
+            height: 100px;
+            min-width: auto;
+            background-color:burlywood;
+            padding:15px 20px;
+            font-size: larger;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+        .name{
+             display:flex;
+             align-items: center;
+             gap:10px;
+        }
+        .nav-bar{
+            display:flex;
+        }
+        .sidebar{
+            background-color: blanchedalmond;
+            width:250px;
+            padding:20px;
+            display:flex;
+            flex-direction:column;
+            gap:15px;
+            height: 500px;
+        }
+        .sidebar a{
+             color:brown;
+             text-decoration: none;
+             padding:10px;
+             border-radius:4px;
+
+        }
+        .sidebar a:hover{
+            background-color:rgb(230, 189, 136);
+        }
+        .main-content{
+            background-color: beige;
+            padding:30px;
+            flex:1;
+            overflow-y:auto;
+        }
+        .card-container{
+            display: flex;
+            gap:20px;
+            flex-wrap:wrap;
+            margin-top: 20px;
+        }
+        .card{
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            min-width: 250px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+        }
+        .footer{
+            background-color: cornsilk;
+            text-align: center;
+            padding:15px;
+            font-size:14px;
+            border-top:1px solid rgb(204, 218, 191);
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Company Dashboard Layout</h1>
+    <header class="header">
+       <div class="name">
+          COMPANY
+       </div>
+    </header>
+    <div class="nav-bar">
+        <nav class="sidebar">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#analystics">Analystics</a>
+            <a href="#projects">Projects</a>
+            <a href="#settings">Settings</a>
+        </nav>
+        <main class="main-content">
+                <h2>Welcome Back</h2>
+                <p>here is your daily company overview</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <p>$45,000</p>
+                </div>
+                <div class="card">
+                    <h3>Active Users</h3>
+                    <p>3,247</p>
+                </div>
+                <div class="card">
+                    <h3>Open Tasks</h3>
+                    <p>12</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        &copy;2026 company . All rights reserved
+    </footer>
+
+</body>
+</html>

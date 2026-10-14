@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+                font-family:Arial,sans-serif;
+            }
+
+            body{
+                background:#f4f4f4;
+            }
+
+            .container{
+                display:flex;
+                min-height:100vh;
+            }
+
+
+            .sidebar{
+                width:220px;
+                background:#2c3e50;
+                color:white;
+                padding:20px;
+                position:fixed;
+                top:0;
+                left:0;
+                bottom:0;
+            }
+
+            .sidebar h2{
+                margin-bottom:20px;
+            }
+
+            .sidebar ul{
+                list-style:none;
+            }
+
+            .sidebar li{
+                padding:12px 0;
+                cursor:pointer;
+            }
+
+
+
+            .main-content{
+                margin-left:220px;
+                width:100%;
+            }
+
+
+            .top-nav{
+                position:sticky;
+                top:0;
+                background:white;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                padding:20px;
+                border-bottom:1px solid #ccc;
+            }
+
+
+            .stats{
+                display:flex;
+                gap:20px;
+                flex-wrap:wrap;
+                padding:20px;
+            }
+
+            .card{
+                flex:1;
+                min-width:200px;
+                background:white;
+                padding:20px;
+                border:1px solid #ccc;
+                text-align:center;
+            }
+
+
+            .activity{
+                margin:20px;
+                background:white;
+                padding:20px;
+                border:1px solid #ccc;
+            }
+
+            .activity h2{
+                margin-bottom:15px;
+            }
+
+            .activity ul{
+                list-style:disc;
+                margin-left:20px;
+            }
+
+            .activity li{
+                margin-bottom:10px;
+            }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>Admin Panel</h2>
+
+        <ul>
+            <li>Dashboard</li>
+            <li>Users</li>
+            <li>Products</li>
+            <li>Orders</li>
+            <li>Reports</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+
+    <div class="main-content">
+
+      
+        <header class="top-nav">
+            <h2>Dashboard</h2>
+            <div class="profile">
+                <span>Admin</span>
+            </div>
+        </header>
+
+      
+        <section class="stats">
+
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>1,250</p>
+            </div>
+
+            <div class="card">
+                <h3>Orders</h3>
+                <p>320</p>
+            </div>
+
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>₹5,40,000</p>
+            </div>
+
+            <div class="card">
+                <h3>Products</h3>
+                <p>180</p>
+            </div>
+
+        </section>
+
+        <section class="activity">
+            <h2>Recent Activity</h2>
+
+            <ul>
+                <li>New user registered.</li>
+                <li>Order #1025 has been shipped.</li>
+                <li>Product "Laptop" added.</li>
+                <li>Monthly sales report generated.</li>
+                <li>Admin updated website settings.</li>
+            </ul>
+        </section>
+
+    </div>
+
+</div>
+
+</body>
+</html>

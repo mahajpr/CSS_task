@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Homepage</title>
+    <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+                font-family:Arial,sans-serif;
+            }
+
+            body{
+                background:#f4f4f4;
+            }
+
+
+
+            .navbar{
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                background:#333;
+                color:white;
+                padding:15px 30px;
+            }
+
+            .navbar nav{
+                display:flex;
+                gap:20px;
+            }
+
+            .navbar a{
+                color:white;
+                text-decoration:none;
+            }
+
+
+
+            .hero{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                height:400px;
+                background:#6c63ff;
+                color:white;
+                text-align:center;
+            }
+
+            .hero-content{
+                display:flex;
+                flex-direction:column;
+                gap:20px;
+            }
+
+            .hero button{
+                width:150px;
+                padding:10px;
+                border:none;
+                background:white;
+                color:#6c63ff;
+                cursor:pointer;
+                align-self:center;
+            }
+
+
+
+            .categories{
+                padding:40px;
+            }
+
+            .category-container{
+                display:flex;
+                justify-content:center;
+                gap:20px;
+                flex-wrap:wrap;
+                margin-top:20px;
+            }
+
+            .category-card{
+                width:180px;
+                padding:20px;
+                background:white;
+                border:1px solid #ccc;
+                text-align:center;
+            }
+
+
+
+            .products{
+                padding:40px;
+            }
+
+            .product-container{
+                display:flex;
+                justify-content:center;
+                gap:20px;
+                flex-wrap:wrap;
+                margin-top:20px;
+            }
+
+            .product-card{
+                width:220px;
+                background:white;
+                padding:20px;
+                border:1px solid #ccc;
+                text-align:center;
+            }
+
+            .product-card button{
+                margin-top:10px;
+                padding:8px 15px;
+                border:none;
+                background:#6c63ff;
+                color:white;
+                cursor:pointer;
+            }
+
+
+
+            .footer{
+                background:#333;
+                color:white;
+                text-align:center;
+                padding:20px;
+            }
+
+
+
+            @media (max-width:768px){
+
+                .navbar{
+                    flex-direction:column;
+                    gap:15px;
+                }
+
+                .navbar nav{
+                    flex-wrap:wrap;
+                    justify-content:center;
+                }
+
+                .hero{
+                    height:300px;
+                    padding:20px;
+                }
+
+                .category-container,
+                .product-container{
+                    flex-direction:column;
+                    align-items:center;
+                }
+            }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>ShopEase</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">Products</a>
+            <a href="#">Offers</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+   
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to ShopEase</h1>
+            <p>Discover the best products at the best prices.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+
+    <section class="categories">
+        <h2>Categories</h2>
+
+        <div class="category-container">
+            <div class="category-card">Electronics</div>
+            <div class="category-card">Fashion</div>
+            <div class="category-card">Home Appliances</div>
+            <div class="category-card">Books</div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <h3>Laptop</h3>
+                <p>₹55,000</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Smartphone</h3>
+                <p>₹25,000</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Headphones</h3>
+                <p>₹2,500</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Smart Watch</h3>
+                <p>₹6,000</p>
+                <button>Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+    <style>
+        .navigation{
+        height:40px;
+        width:400px;
+        margin:20px;
+        padding:15px;
+        text-align: center;
+        background-color: #6FBEB2;
+        border: 3px solid #34908B;
+        border-radius: 10px;
+        position:fixed;
+       }
+       a{
+        color:white;
+        text-decoration: none;
+        margin:10px;
+        padding:10px;
+        font-size: 18px;
+        border-radius: 5px;
+       }
+       a:hover{
+        background-color: #A5E9DD;
+       }
+    </style>
+</head>
+<body>
+    <h1>Fixed Header</h1>
+    <div class="navigation">
+        <nav>
+            <a href =#Home>Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href =#contact>contact</a>
+        </nav>
+    </div>
+    <p>
+      Option 1: The Traditional position: fixed MethodThe position: fixed property anchors an element relative to the browser viewport. It ignores the regular layout order, completely removing the header from the document flow.Implementation Examplecssheader {
+  position: fixed;   /* Lock to viewport */
+  top: 0;            /* Push to top edge */
+  left: 0;           /* Push to left edge */
+  width: 100%;       /* Stretch across screen */
+  z-index: 1000;     /* Layer on top of content */
+  height: 80px;      /* Explicit height */
+}
+
+body {
+  margin-top: 80px;  /* Match header height to prevent 
+  content overlap */
+}
+💡 Critical Gotchas with position: fixedContent Overlap: 
+Because the element floats outside the layout flow, the page content underneath shifts 
+up to the absolute top of the page. You must manually add a margin-top or padding-top to your main content container that matches the exact 
+height of your header.Layering Issues: Content with its own positioning might float over your header while scrolling.
+ Always define a high z-index value on the header to force it to stay on top.📌 Option 2: The Modern position: sticky MethodThe position: sticky property acts like a standard 
+ relative element until the user scrolls past it, at which point it seamlessly switches behaviors to lock into a fixed position.Implementation Examplecssheader {
+  position: sticky;  /* Contextual sticky locking */
+  top: 0;            /* Lock precisely at viewport top edge */
+  z-index: 1000;     /* Layer on top of content */
+}
+💡 Benefits & Requirements of position: 
+stickyPreserves Layout Flow: Unlike the fixed method, sticky positioning reserves the element's space in the 
+standard document layout. You do not need to calculate or apply compensation margins to the main content container.
+Parent Container Bound: A sticky element can only stay fixed within the spatial boundaries of its immediate parent container. 
+If the parent element finishes scrolling past the viewport, the header scrolls away with it.Overflow Rule Restriction: Sticky headers will break completely if any of their parent containers feature the overflow: hidden, overflow: scroll, or overflow: auto properties.
+📊 Quick Comparison: Fixed vs. StickyFeatureposition: fixedposition: stickyViewport BehaviorConstantly anchored to the screen viewport.Acts naturally until scrolled to the threshold.
+Document FlowCompletely pulled out of the layout flow.Space is fully reserved in the normal flow.Layout AdjustmentsNeeds manual top margins on page content.No layout margins required.Container LimitsFloats independently of parent tags.Trapped inside parent element bounds.</p>
+<p>Option 1: The Traditional position: fixed MethodThe position: fixed property anchors an element relative to the browser viewport. It ignores the regular layout order, completely removing the header from the document flow.Implementation Examplecssheader {
+  position: fixed;   /* Lock to viewport */
+  top: 0;            /* Push to top edge */
+  left: 0;           /* Push to left edge */
+  width: 100%;       /* Stretch across screen */
+  z-index: 1000;     /* Layer on top of content */
+  height: 80px;      /* Explicit height */
+}
+
+body {
+  margin-top: 80px;  /* Match header height to prevent 
+  content overlap */
+}
+💡 Critical Gotchas with position: fixedContent Overlap: 
+Because the element floats outside the layout flow, the page content underneath shifts 
+up to the absolute top of the page. You must manually add a margin-top or padding-top to your main content container that matches the exact 
+height of your header.Layering Issues: Content with its own positioning might float over your header while scrolling.
+ Always define a high z-index value on the header to force it to stay on top.📌 Option 2: The Modern position: sticky MethodThe position: sticky property acts like a standard 
+ relative element until the user scrolls past it, at which point it seamlessly switches behaviors to lock into a fixed position.Implementation Examplecssheader {
+  position: sticky;  /* Contextual sticky locking */
+  top: 0;            /* Lock precisely at viewport top edge */
+  z-index: 1000;     /* Layer on top of content */
+}
+💡 Benefits & Requirements of position: 
+stickyPreserves Layout Flow: Unlike the fixed method, sticky positioning reserves the element's space in the 
+standard document layout. You do not need to calculate or apply compensation margins to the main content container.
+Parent Container Bound: A sticky element can only stay fixed within the spatial boundaries of its immediate parent container. 
+If the parent element finishes scrolling past the viewport, the header scrolls away with it.Overflow Rule Restriction: Sticky headers will break completely if any of their parent containers feature the overflow: hidden, overflow: scroll, or overflow: auto properties.
+📊 Quick Comparison: Fixed vs. StickyFeatureposition: fixedposition: stickyViewport BehaviorConstantly anchored to the screen viewport.Acts naturally until scrolled to the threshold.
+Document FlowCompletely pulled out of the layout flow.Space is fully reserved in the normal flow.Layout AdjustmentsNeeds manual top margins on page content.No layout margins required.Container LimitsFloats independently of parent tags.Trapped inside parent element bounds.</p>
+</body>
+</html>
